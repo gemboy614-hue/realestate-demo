@@ -231,6 +231,32 @@ $$('.qa').forEach(qa => {
   });
 });
 
+/* ─── Мобильное меню ───────────────────── */
+(function mobileMenu() {
+  const burger = $('#navBurger'), menu = $('#mobMenu'), nav = $('#nav');
+  if (!burger || !menu) return;
+  const links = $$('.mob-menu__link', menu);
+  function toggle() {
+    const open = menu.classList.contains('is-open');
+    if (open) {
+      burger.classList.remove('is-open');
+      nav.classList.remove('mob-open');
+      gsap.to(links, { opacity: 0, y: 20, duration: .25, stagger: .03 });
+      gsap.to(menu, { opacity: 0, duration: .35, delay: .1, onComplete: () => { menu.classList.remove('is-open'); if (lenis) lenis.start(); document.body.style.overflow = ''; } });
+    } else {
+      menu.classList.add('is-open');
+      burger.classList.add('is-open');
+      nav.classList.add('mob-open');
+      if (lenis) lenis.stop();
+      document.body.style.overflow = 'hidden';
+      gsap.fromTo(menu, { opacity: 0 }, { opacity: 1, duration: .35 });
+      gsap.fromTo(links, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: .6, stagger: .07, ease: 'power3.out', delay: .12 });
+    }
+  }
+  burger.addEventListener('click', toggle);
+  links.forEach(a => a.addEventListener('click', () => { if (menu.classList.contains('is-open')) toggle(); }));
+})();
+
 /* ─── Шапка: автоскрытие ────────────────── */
 (function navHide() {
   const nav = $('#nav'); if (!nav) return;
