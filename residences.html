@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Резиденции — ЗАРЕЧЬЕ</title>
+<meta name="description" content="Шестнадцать резиденций премиум-класса на берегу реки: таунхаусы и пентхаусы с террасами и видом на воду." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="page-curtain" aria-hidden="true"><span class="page-curtain__brand"><i>✦</i>ЗАРЕЧЬЕ</span></div>
+<div class="cursor" id="cursor"><span class="cursor__label" id="cursorLabel"></span></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<header class="nav" id="nav">
+  <a href="index.html" class="nav__brand" data-cursor><span class="nav__mark">✦</span><span class="nav__name">ЗАРЕЧЬЕ</span></a>
+  <nav class="nav__links">
+    <a href="residences.html" data-cursor>Резиденции</a><span class="nav__sep">✦</span>
+    <a href="gallery.html" data-cursor>Галерея</a><span class="nav__sep">✦</span>
+    <a href="about.html" data-cursor>О клубе</a>
+  </nav>
+  <a href="contacts.html" class="nav__cta" data-cursor><span>Контакты</span></a>
+</header>
+
+<main>
+  <!-- Под-герой -->
+  <section class="subhero">
+    <div class="subhero__bg" style="background-image:url('assets/img/facade.jpg')" data-parallax-bg></div>
+    <div class="subhero__scrim"></div>
+    <div class="subhero__inner">
+      <div class="breadcrumb"><a href="index.html" data-cursor>Главная</a><i>/</i><span>Резиденции</span></div>
+      <h1 class="subhero__title" data-words>
+        <span class="line"><span data-line-word>Шестнадцать</span></span>
+        <span class="line"><span data-line-word><em>резиденций</em></span></span>
+      </h1>
+      <p class="subhero__lead" data-reveal>Таунхаусы и пентхаусы первой линии — от камерных резиденций для пары до флагманских видовых пространств с приватным выходом к воде.</p>
+    </div>
+  </section>
+
+  <!-- Фильтры -->
+  <div class="filterbar" data-filter-bar>
+    <button data-filter="all" class="is-active" data-cursor>Все</button>
+    <button data-filter="townhouse" data-cursor>Таунхаусы</button>
+    <button data-filter="penthouse" data-cursor>Пентхаусы</button>
+  </div>
+
+  <!-- Каталог -->
+  <section class="catalog">
+    <div class="catalog__grid">
+
+      <a class="rescard" href="residence.html?id=R1" data-category="townhouse" data-cursor data-cursor-label="открыть" data-reveal>
+        <div class="rescard__media"><span class="rescard__badge">Таунхаус · у воды</span><img src="assets/img/exterior.jpg" alt="Резиденция Ривьера"><span class="rescard__view"><span>Открыть</span></span></div>
+        <div class="rescard__row"><span class="rescard__name">Ривьера</span><span class="rescard__price">от 48 млн ₽</span></div>
+        <div class="rescard__meta"><span><b>184</b>&nbsp;м²</span><span><b>3</b>&nbsp;спальни</span><span><b>2</b>&nbsp;этаж</span></div>
+      </a>
+
+      <a class="rescard" href="residence.html?id=R2" data-category="penthouse" data-cursor data-cursor-label="открыть" data-reveal>
+        <div class="rescard__media"><span class="rescard__badge">Пентхаус</span><img src="assets/img/facade.jpg" alt="Резиденция Лагуна"><span class="rescard__view"><span>Открыть</span></span></div>
+        <div class="rescard__row"><span class="rescard__name">Лагуна</span><span class="rescard__price">от 72 млн ₽</span></div>
+        <div class="rescard__meta"><span><b>220</b>&nbsp;м²</span><span><b>4</b>&nbsp;спальни</span><span><b>3</b>&nbsp;этаж</span></div>
+      </a>
+
+      <a class="rescard" href="residence.html?id=R3" data-category="townhouse" data-cursor data-cursor-label="открыть" data-reveal>
+        <div class="rescard__media"><span class="rescard__badge">Таунхаус</span><img src="assets/img/hero.jpg" alt="Резиденция Прибрежная"><span class="rescard__view"><span>Открыть</span></span></div>
+        <div class="rescard__row"><span class="rescard__name">Прибрежная</span><span class="rescard__price">от 41 млн ₽</span></div>
+        <div class="rescard__meta"><span><b>165</b>&nbsp;м²</span><span><b>3</b>&nbsp;спальни</span><span><b>2</b>&nbsp;этаж</span></div>
+      </a>
+
+      <a class="rescard" href="residence.html?id=R4" data-category="penthouse" data-cursor data-cursor-label="открыть" data-reveal>
+        <div class="rescard__media"><span class="rescard__badge">Пентхаус · флагман</span><img src="assets/img/aerial.jpg" alt="Резиденция Панорама"><span class="rescard__view"><span>Открыть</span></span></div>
+        <div class="rescard__row"><span class="rescard__name">Панорама</span><span class="rescard__price">от 86 млн ₽</span></div>
+        <div class="rescard__meta"><span><b>245</b>&nbsp;м²</span><span><b>4</b>&nbsp;спальни</span><span><b>3</b>&nbsp;этаж</span></div>
+      </a>
+
+      <a class="rescard" href="residence.html?id=R5" data-category="townhouse" data-cursor data-cursor-label="открыть" data-reveal>
+        <div class="rescard__media"><span class="rescard__badge">Таунхаус</span><img src="assets/img/terrace.jpg" alt="Резиденция Затон"><span class="rescard__view"><span>Открыть</span></span></div>
+        <div class="rescard__row"><span class="rescard__name">Затон</span><span class="rescard__price">от 38 млн ₽</span></div>
+        <div class="rescard__meta"><span><b>158</b>&nbsp;м²</span><span><b>2</b>&nbsp;спальни</span><span><b>2</b>&nbsp;этаж</span></div>
+      </a>
+
+      <a class="rescard" href="residence.html?id=R6" data-category="townhouse" data-cursor data-cursor-label="открыть" data-reveal>
+        <div class="rescard__media"><span class="rescard__badge">Двухуровневая</span><img src="assets/img/detail.jpg" alt="Резиденция Маяк"><span class="rescard__view"><span>Открыть</span></span></div>
+        <div class="rescard__row"><span class="rescard__name">Маяк</span><span class="rescard__price">от 56 млн ₽</span></div>
+        <div class="rescard__meta"><span><b>198</b>&nbsp;м²</span><span><b>3</b>&nbsp;спальни</span><span><b>2–3</b>&nbsp;этаж</span></div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta__bg" style="background-image:url('assets/img/mist.jpg')" data-parallax-bg></div>
+    <div class="cta__scrim"></div>
+    <div class="cta__inner">
+      <h2 class="cta__title" data-reveal>Не нашли <em>идеальную</em>?</h2>
+      <p class="cta__sub" data-reveal>Расскажите о ваших пожеланиях — подберём резиденцию и организуем приватный показ в удобное время.</p>
+      <a href="contacts.html" class="btn btn--gold" data-cursor data-magnetic data-reveal><span>Оставить заявку</span><i>→</i></a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="site-footer__top">
+      <div>
+        <div class="site-footer__brand"><i>✦</i>ЗАРЕЧЬЕ</div>
+        <p>Резиденц-клуб из шестнадцати таунхаусов премиум-класса на берегу реки. Концепт-превью 2026.</p>
+      </div>
+      <div class="fcol">
+        <h4>Навигация</h4>
+        <a href="residences.html" data-cursor>Резиденции</a>
+        <a href="gallery.html" data-cursor>Галерея</a>
+        <a href="about.html" data-cursor>О клубе</a>
+        <a href="contacts.html" data-cursor>Контакты</a>
+      </div>
+      <div class="fcol">
+        <h4>Контакты</h4>
+        <a href="tel:+74950000000" data-cursor>+7 495 000-00-00</a>
+        <a href="mailto:hello@zarechye.club" data-cursor>hello@zarechye.club</a>
+        <a>Набережная реки, 1</a>
+        <a>Центральный район</a>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© <span data-year>2026</span> ЗАРЕЧЬЕ · Концепт-превью</span>
+      <span>Демонстрационный проект</span>
+    </div>
+  </footer>
+</main>
+
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/lenis.min.js"></script>
+<script src="assets/vendor/split-type.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

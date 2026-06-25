@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ЗАРЕЧЬЕ — Резиденц-клуб премиум-класса на берегу реки</title>
+<meta name="description" content="Заречье — резиденц-клуб из шестнадцати таунхаусов премиум-класса на набережной. Приватные резиденции, природа и круглогодичный консьерж-сервис." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ░░░ ШТОРКА ПЕРЕХОДА ░░░ -->
+<div class="page-curtain is-open" aria-hidden="true"><span class="page-curtain__brand"><i>✦</i>ЗАРЕЧЬЕ</span></div>
+
+<!-- ░░░ ПРЕЛОАДЕР ░░░ -->
+<div class="loader" id="loader">
+  <div class="loader__inner">
+    <div class="loader__brand">
+      <span class="loader__word" data-word>ЗАРЕЧЬЕ</span>
+    </div>
+    <div class="loader__meta">
+      <span class="loader__tag">РЕЗИДЕНЦ-КЛУБ · КОНЦЕПТ 2026</span>
+      <span class="loader__count"><span id="loaderNum">0</span><i>%</i></span>
+    </div>
+    <div class="loader__bar"><span id="loaderBar"></span></div>
+  </div>
+</div>
+
+<!-- ░░░ КАСТОМНЫЙ КУРСОР ░░░ -->
+<div class="cursor" id="cursor"><span class="cursor__label" id="cursorLabel"></span></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- ░░░ ШАПКА ░░░ -->
+<header class="nav" id="nav" data-theme="dark">
+  <a href="#top" class="nav__brand" data-cursor>
+    <span class="nav__mark">✦</span>
+    <span class="nav__name">ЗАРЕЧЬЕ</span>
+  </a>
+  <nav class="nav__links">
+    <a href="residences.html" data-cursor>Резиденции</a>
+    <span class="nav__sep">✦</span>
+    <a href="gallery.html" data-cursor>Галерея</a>
+    <span class="nav__sep">✦</span>
+    <a href="about.html" data-cursor>О клубе</a>
+  </nav>
+  <a href="contacts.html" class="nav__cta" data-cursor>
+    <span>Контакты</span>
+  </a>
+</header>
+
+<main id="top">
+
+  <!-- ░░░ ГЕРОЙ ░░░ -->
+  <section class="hero" id="hero">
+    <div class="hero__media">
+      <div class="hero__slide is-active" style="background-image:url('assets/img/hero.jpg')"></div>
+      <div class="hero__slide" style="background-image:url('assets/img/lake.jpg')"></div>
+      <div class="hero__slide" style="background-image:url('assets/img/exterior.jpg')"></div>
+      <div class="hero__scrim"></div>
+    </div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow eyebrow" data-reveal-line>Люкс-резиденц-клуб на берегу реки</p>
+      <h1 class="hero__title display">
+        <span class="line"><span data-hero-word>Там,</span> <span data-hero-word>где</span> <span data-hero-word>река</span></span>
+        <span class="line"><span data-hero-word>встречает</span> <span data-hero-word><em>всё</em></span></span>
+      </h1>
+    </div>
+
+    <div class="hero__foot">
+      <a href="#concept" class="hero__scroll" data-cursor>
+        <span class="hero__scroll-line"></span>
+        <span class="eyebrow">Листайте</span>
+      </a>
+      <div class="hero__nav">
+        <button class="hero__arrow" id="heroPrev" data-cursor aria-label="Назад">←</button>
+        <span class="hero__count"><i id="heroIndex">01</i> / 03</span>
+        <button class="hero__arrow" id="heroNext" data-cursor aria-label="Вперёд">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░ ВСТУПЛЕНИЕ — word reveal ░░░ -->
+  <section class="intro" id="concept">
+    <div class="intro__star">✦</div>
+    <p class="intro__text display" id="introText">Расположенный в самом сердце набережной, в нескольких шагах от реки и городского парка, «Заречье» — это шестнадцать резиденций премиум-класса с круглогодичным консьерж-сервисом.</p>
+  </section>
+
+  <!-- ░░░ ЦИФРЫ ░░░ -->
+  <section class="stats">
+    <div class="stats__row">
+      <div class="stat" data-reveal>
+        <span class="stat__num display"><span class="count" data-to="16">0</span></span>
+        <span class="stat__label eyebrow">Резиденций</span>
+      </div>
+      <div class="stat" data-reveal>
+        <span class="stat__num display"><span class="count" data-to="4">0</span></span>
+        <span class="stat__label eyebrow">Сезона у воды</span>
+      </div>
+      <div class="stat" data-reveal>
+        <span class="stat__num display"><span class="count" data-to="24">0</span><i>/7</i></span>
+        <span class="stat__label eyebrow">Консьерж-сервис</span>
+      </div>
+      <div class="stat" data-reveal>
+        <span class="stat__num display"><span class="count" data-to="1">0</span><i> мин</i></span>
+        <span class="stat__label eyebrow">До набережной</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░ БЕГУЩАЯ СТРОКА ░░░ -->
+  <section class="marquee" aria-hidden="true">
+    <div class="marquee__track" id="marquee">
+      <span>Резиденц-клуб<i>✦</i>На берегу реки<i>✦</i>Круглый год<i>✦</i>Шестнадцать резиденций<i>✦</i>Жизнь в формате курорта<i>✦</i></span>
+      <span>Резиденц-клуб<i>✦</i>На берегу реки<i>✦</i>Круглый год<i>✦</i>Шестнадцать резиденций<i>✦</i>Жизнь в формате курорта<i>✦</i></span>
+    </div>
+  </section>
+
+  <!-- ░░░ ФИЧА 1 — УТРО (тёмная) ░░░ -->
+  <section class="feature feature--dark" id="residences">
+    <div class="feature__grid">
+      <figure class="feature__media" data-img-reveal>
+        <img src="assets/img/morning.jpg" alt="Рассвет над рекой" data-parallax-img />
+      </figure>
+      <div class="feature__body">
+        <p class="eyebrow" data-reveal-line>Утро</p>
+        <h2 class="feature__title display">
+          <span class="line"><span data-line-word>Пробежка</span> <span data-line-word>вдоль</span> <span data-line-word>реки.</span></span>
+          <span class="line"><span data-line-word><em>Кофе</em></span> <span data-line-word>у</span> <span data-line-word>воды.</span></span>
+        </h2>
+        <p class="feature__lead" data-reveal>Каждое утро начинается у воды: пробежка по набережной, тишина соснового парка и кофе, который уже ждёт вас. Здесь день принадлежит только вам.</p>
+        <a href="#contact" class="link" data-cursor><span>Узнать о резиденциях</span><i>→</i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░ ФИЧА 2 — РЕЗИДЕНЦИИ (светлая) ░░░ -->
+  <section class="feature feature--light">
+    <div class="feature__grid feature__grid--reverse">
+      <figure class="feature__media" data-img-reveal>
+        <img src="assets/img/interior1.jpg" alt="Интерьер резиденции" data-parallax-img />
+      </figure>
+      <div class="feature__body">
+        <p class="eyebrow" data-reveal-line>Резиденции</p>
+        <h2 class="feature__title display">
+          <span class="line"><span data-line-word>Шестнадцать</span> <span data-line-word>таунхаусов.</span></span>
+          <span class="line"><span data-line-word><em>Жизнь</em></span> <span data-line-word>в</span> <span data-line-word>формате</span> <span data-line-word>курорта.</span></span>
+        </h2>
+        <p class="feature__lead" data-reveal>Панорамное остекление, натуральное дерево и камень, приватные террасы с видом на воду. Каждая резиденция спроектирована как личное убежище — с пространством, светом и тишиной.</p>
+        <a href="#contact" class="link" data-cursor><span>Запросить планировки</span><i>→</i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░ ФИЧА 3 — КОНСЬЕРЖ (тёмная) ░░░ -->
+  <section class="feature feature--dark">
+    <div class="feature__grid">
+      <figure class="feature__media" data-img-reveal>
+        <img src="assets/img/golf.jpg" alt="Поле для гольфа" data-parallax-img />
+      </figure>
+      <div class="feature__body">
+        <p class="eyebrow" data-reveal-line>Консьерж-сервис</p>
+        <h2 class="feature__title display">
+          <span class="line"><span data-line-word>Гольф,</span> <span data-line-word>лучшие</span> <span data-line-word>места,</span></span>
+          <span class="line"><span data-line-word>рестораны</span> <span data-line-word>—</span> <span data-line-word><em>всё</em></span> <span data-line-word>организовано.</span></span>
+        </h2>
+        <p class="feature__lead" data-reveal>Ти-таймы на рассвете, первый ряд на концерте, столик в нужном ресторане. Команда клуба берёт на себя детали — вам остаётся только жить.</p>
+        <a href="#contact" class="link" data-cursor><span>Состав сервиса</span><i>→</i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░ ГОРИЗОНТАЛЬНАЯ ГАЛЕРЕЯ ░░░ -->
+  <section class="gallery" id="place">
+    <div class="gallery__head">
+      <p class="eyebrow" data-reveal-line>Резиденции</p>
+      <h2 class="gallery__title display" data-reveal>Выберите свою — <em>откройте резиденцию</em></h2>
+      <a href="residences.html" class="link" data-cursor data-reveal style="margin-top:.4rem"><span>Все резиденции</span><i>→</i></a>
+    </div>
+    <div class="gallery__viewport">
+      <div class="gallery__track" id="galleryTrack">
+        <a class="gcard" href="residence.html?id=R1" data-cursor data-cursor-label="открыть"><img src="assets/img/interior1.jpg" alt="Резиденция Ривьера"><figcaption><b>R1</b> Ривьера</figcaption></a>
+        <a class="gcard" href="residence.html?id=R2" data-cursor data-cursor-label="открыть"><img src="assets/img/living2.jpg" alt="Резиденция Лагуна"><figcaption><b>R2</b> Лагуна</figcaption></a>
+        <a class="gcard gcard--wide" href="residence.html?id=R4" data-cursor data-cursor-label="открыть"><img src="assets/img/interior2.jpg" alt="Резиденция Панорама"><figcaption><b>R4</b> Панорама</figcaption></a>
+        <a class="gcard" href="residence.html?id=R3" data-cursor data-cursor-label="открыть"><img src="assets/img/terrace.jpg" alt="Резиденция Прибрежная"><figcaption><b>R3</b> Прибрежная</figcaption></a>
+        <a class="gcard" href="residence.html?id=R6" data-cursor data-cursor-label="открыть"><img src="assets/img/bedroom1.jpg" alt="Резиденция Маяк"><figcaption><b>R6</b> Маяк</figcaption></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░ ФИЧА 4 — ОБРАЗ ЖИЗНИ (тёмная, full-bleed) ░░░ -->
+  <section class="lifestyle">
+    <div class="lifestyle__bg" style="background-image:url('assets/img/forest.jpg')" data-parallax-bg></div>
+    <div class="lifestyle__scrim"></div>
+    <div class="lifestyle__content">
+      <p class="eyebrow eyebrow--light" data-reveal-line>Образ жизни</p>
+      <h2 class="lifestyle__title display">
+        <span class="line"><span data-line-word>На</span> <span data-line-word>велосипеде</span> <span data-line-word>—</span> <span data-line-word>к</span> <span data-line-word>воде.</span></span>
+        <span class="line"><span data-line-word><em>Сезон</em></span> <span data-line-word>длиною</span> <span data-line-word>в</span> <span data-line-word>год.</span></span>
+      </h2>
+      <p class="lifestyle__lead" data-reveal>Велодорожки, сап-борды и каяки летом, лыжи и тёплые вечера у камина зимой. «Заречье» — это четыре сезона на одной набережной.</p>
+    </div>
+  </section>
+
+  <!-- ░░░ FAQ ░░░ -->
+  <section class="faq">
+    <div class="faq__head">
+      <p class="eyebrow" data-reveal-line>(ответы)</p>
+      <h2 class="faq__title display" data-reveal>Понятный разговор <em>с самого начала</em></h2>
+    </div>
+    <div class="faq__list">
+      <div class="qa" data-reveal>
+        <button class="qa__q" data-cursor>
+          <span class="qa__qtext display">Что такое «Заречье»?</span>
+          <span class="qa__icon"></span>
+        </button>
+        <div class="qa__a"><p>«Заречье» — это резиденц-клуб из шестнадцати таунхаусов премиум-класса, устроенный как мини-курорт: приватные резиденции и круглогодичный консьерж-сервис на берегу реки.</p></div>
+      </div>
+      <div class="qa" data-reveal>
+        <button class="qa__q" data-cursor>
+          <span class="qa__qtext display">Где расположен проект?</span>
+          <span class="qa__icon"></span>
+        </button>
+        <div class="qa__a"><p>Концепция выстроена вокруг набережной: в шаговой доступности река, городской парк, рестораны, гольф и природа Центрального района.</p></div>
+      </div>
+      <div class="qa" data-reveal>
+        <button class="qa__q" data-cursor>
+          <span class="qa__qtext display">Как инвестору начать диалог?</span>
+          <span class="qa__icon"></span>
+        </button>
+        <div class="qa__a"><p>Оставьте заявку в форме ниже — команда пришлёт детали по планировкам, условиям и материалы для следующего этапа знакомства с проектом.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░ КОНТАКТЫ ░░░ -->
+  <section class="contact" id="contact">
+    <div class="contact__bg" style="background-image:url('assets/img/mist.jpg')" data-parallax-bg></div>
+    <div class="contact__card" data-reveal>
+      <div class="contact__intro">
+        <p class="eyebrow eyebrow--light" data-reveal-line>(заявки)</p>
+        <h2 class="contact__title display">
+          <span class="line">Короткий список.</span>
+          <span class="line"><em>Длинные выходные.</em></span>
+        </h2>
+        <p class="contact__sub">Превью на этапе концепции. Оставьте сообщение — команда свяжется с вами и пришлёт планировки и материалы для знакомства с проектом.</p>
+        <div class="contact__where">
+          <span class="eyebrow eyebrow--light">Где</span>
+          <span class="contact__addr">Набережная реки · Центральный район</span>
+        </div>
+      </div>
+
+      <form class="form" id="form" data-demo-form novalidate>
+        <div class="form__row">
+          <label class="field"><span class="field__label eyebrow">Имя</span><input type="text" name="first" autocomplete="given-name" data-cursor /><span class="field__line"></span></label>
+          <label class="field"><span class="field__label eyebrow">Фамилия</span><input type="text" name="last" autocomplete="family-name" data-cursor /><span class="field__line"></span></label>
+        </div>
+        <label class="field"><span class="field__label eyebrow">Email</span><input type="email" name="email" autocomplete="email" data-cursor /><span class="field__line"></span></label>
+        <label class="field"><span class="field__label eyebrow">Сообщение</span><textarea name="message" rows="3" data-cursor></textarea><span class="field__line"></span></label>
+        <div class="form__foot">
+          <button type="submit" class="submit" id="submit" data-cursor>
+            <span class="submit__txt">Отправить заявку</span>
+            <span class="submit__arrow">→</span>
+          </button>
+          <span class="form__note">Ответим в течение двух рабочих дней.</span>
+        </div>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <span>© 2026 ЗАРЕЧЬЕ</span>
+      <span class="footer__mark">✦</span>
+      <span>Концепт-превью</span>
+    </footer>
+  </section>
+
+</main>
+
+<!-- ░░░ СКРИПТЫ ░░░ -->
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/lenis.min.js"></script>
+<script src="assets/vendor/split-type.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

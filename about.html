@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>О клубе — ЗАРЕЧЬЕ</title>
+<meta name="description" content="Философия, команда и этапы проекта резиденц-клуба «Заречье» на берегу реки." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="page-curtain" aria-hidden="true"><span class="page-curtain__brand"><i>✦</i>ЗАРЕЧЬЕ</span></div>
+<div class="cursor" id="cursor"><span class="cursor__label" id="cursorLabel"></span></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<header class="nav" id="nav">
+  <a href="index.html" class="nav__brand" data-cursor><span class="nav__mark">✦</span><span class="nav__name">ЗАРЕЧЬЕ</span></a>
+  <nav class="nav__links">
+    <a href="residences.html" data-cursor>Резиденции</a><span class="nav__sep">✦</span>
+    <a href="gallery.html" data-cursor>Галерея</a><span class="nav__sep">✦</span>
+    <a href="about.html" data-cursor>О клубе</a>
+  </nav>
+  <a href="contacts.html" class="nav__cta" data-cursor><span>Контакты</span></a>
+</header>
+
+<main>
+  <section class="subhero">
+    <div class="subhero__bg" style="background-image:url('assets/img/mist.jpg')" data-parallax-bg></div>
+    <div class="subhero__scrim"></div>
+    <div class="subhero__inner">
+      <div class="breadcrumb"><a href="index.html" data-cursor>Главная</a><i>/</i><span>О клубе</span></div>
+      <h1 class="subhero__title" data-words>
+        <span class="line"><span data-line-word>Дом,</span> <span data-line-word>а</span> <span data-line-word>не</span></span>
+        <span class="line"><span data-line-word><em>просто</em></span> <span data-line-word>адрес</span></span>
+      </h1>
+      <p class="subhero__lead" data-reveal>«Заречье» создаётся как камерный мир на берегу реки — где архитектура, природа и сервис складываются в один образ жизни.</p>
+    </div>
+  </section>
+
+  <!-- Манифест с word-reveal -->
+  <section class="intro">
+    <div class="intro__star">✦</div>
+    <p class="intro__text display" id="introText">Мы строим не квадратные метры, а ощущение места. Шестнадцать резиденций, набережная, сосновый парк и сервис, который предугадывает желания, — чтобы каждое утро здесь начиналось правильно.</p>
+  </section>
+
+  <!-- Ценности -->
+  <section class="values">
+    <div class="section-head">
+      <p class="eyebrow" data-reveal-line>Принципы</p>
+      <h2 class="section-title" data-reveal>Во что мы <em>верим</em></h2>
+    </div>
+    <div class="values__grid" data-stagger>
+      <div class="value">
+        <div class="value__num">01</div>
+        <h3>Камерность</h3>
+        <p>Всего шестнадцать резиденций. Приватность, тишина и чувство закрытого клуба, где знают каждого.</p>
+      </div>
+      <div class="value">
+        <div class="value__num">02</div>
+        <h3>Природа рядом</h3>
+        <p>Река, набережная и сосновый парк — в шаговой доступности. Город остаётся в стороне, когда нужно.</p>
+      </div>
+      <div class="value">
+        <div class="value__num">03</div>
+        <h3>Сервис без слов</h3>
+        <p>Консьерж-команда берёт на себя детали — от брони ресторана до подготовки резиденции к вашему приезду.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Таймлайн -->
+  <section class="timeline">
+    <div class="section-head">
+      <p class="eyebrow" style="color:var(--gold-soft)" data-reveal-line>Этапы</p>
+      <h2 class="section-title" data-reveal>Путь <em>проекта</em></h2>
+    </div>
+    <div class="timeline__list" data-stagger>
+      <div class="tl-item"><b>2024</b><div><h3>Концепция и участок</h3><p>Выбор площадки на первой линии набережной и разработка концепции резиденц-клуба.</p></div></div>
+      <div class="tl-item"><b>2025</b><div><h3>Архитектурный проект</h3><p>Бюро завершает проект 16 резиденций, ландшафта набережной и клубной инфраструктуры.</p></div></div>
+      <div class="tl-item"><b>2026</b><div><h3>Старт продаж · концепт-превью</h3><p>Открываем закрытый показ для первых резидентов и инвесторов проекта.</p></div></div>
+      <div class="tl-item"><b>2027</b><div><h3>Начало строительства</h3><p>Выход на площадку, монолитные работы и формирование набережной.</p></div></div>
+      <div class="tl-item"><b>2028</b><div><h3>Ввод в эксплуатацию</h3><p>Передача ключей, запуск консьерж-сервиса и клубных пространств.</p></div></div>
+    </div>
+  </section>
+
+  <!-- Команда -->
+  <section class="team">
+    <div class="section-head">
+      <p class="eyebrow" data-reveal-line>Команда</p>
+      <h2 class="section-title" data-reveal>Люди <em>за проектом</em></h2>
+    </div>
+    <div class="team__grid" data-stagger>
+      <div class="member"><div class="member__avatar">АМ</div><h3>Анна Морозова</h3><span>Управляющий партнёр</span></div>
+      <div class="member"><div class="member__avatar">ДС</div><h3>Дмитрий Соколов</h3><span>Главный архитектор</span></div>
+      <div class="member"><div class="member__avatar">ЕК</div><h3>Елена Кравцова</h3><span>Директор по продажам</span></div>
+      <div class="member"><div class="member__avatar">ИЛ</div><h3>Игорь Лебедев</h3><span>Руководитель сервиса</span></div>
+    </div>
+  </section>
+
+  <!-- Пресса -->
+  <section class="press">
+    <p class="eyebrow" data-reveal>О нас пишут</p>
+    <div class="press__row" data-reveal>
+      <span>Forbes</span><span>РБК · Недвижимость</span><span>Архитектурный совет</span><span>Дом&amp;Интерьер</span><span>Ведомости</span>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta__bg" style="background-image:url('assets/img/forest.jpg')" data-parallax-bg></div>
+    <div class="cta__scrim"></div>
+    <div class="cta__inner">
+      <h2 class="cta__title" data-reveal>Познакомьтесь с <em>клубом</em></h2>
+      <p class="cta__sub" data-reveal>Запишитесь на закрытый показ концепт-превью «Заречье» — расскажем о проекте лично.</p>
+      <a href="contacts.html" class="btn btn--gold" data-cursor data-magnetic data-reveal><span>Записаться на показ</span><i>→</i></a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="site-footer__top">
+      <div>
+        <div class="site-footer__brand"><i>✦</i>ЗАРЕЧЬЕ</div>
+        <p>Резиденц-клуб из шестнадцати таунхаусов премиум-класса на берегу реки. Концепт-превью 2026.</p>
+      </div>
+      <div class="fcol">
+        <h4>Навигация</h4>
+        <a href="residences.html" data-cursor>Резиденции</a>
+        <a href="gallery.html" data-cursor>Галерея</a>
+        <a href="about.html" data-cursor>О клубе</a>
+        <a href="contacts.html" data-cursor>Контакты</a>
+      </div>
+      <div class="fcol">
+        <h4>Контакты</h4>
+        <a href="tel:+74950000000" data-cursor>+7 495 000-00-00</a>
+        <a href="mailto:hello@zarechye.club" data-cursor>hello@zarechye.club</a>
+        <a>Набережная реки, 1</a>
+        <a>Центральный район</a>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© <span data-year>2026</span> ЗАРЕЧЬЕ · Концепт-превью</span>
+      <span>Демонстрационный проект</span>
+    </div>
+  </footer>
+</main>
+
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/lenis.min.js"></script>
+<script src="assets/vendor/split-type.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

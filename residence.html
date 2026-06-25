@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Резиденция — ЗАРЕЧЬЕ</title>
+<meta name="description" content="Резиденция премиум-класса в клубе «Заречье» — планировка, характеристики и приватный показ." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body data-residence>
+
+<div class="page-curtain" aria-hidden="true"><span class="page-curtain__brand"><i>✦</i>ЗАРЕЧЬЕ</span></div>
+<div class="cursor" id="cursor"><span class="cursor__label" id="cursorLabel"></span></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<header class="nav" id="nav">
+  <a href="index.html" class="nav__brand" data-cursor><span class="nav__mark">✦</span><span class="nav__name">ЗАРЕЧЬЕ</span></a>
+  <nav class="nav__links">
+    <a href="residences.html" data-cursor>Резиденции</a><span class="nav__sep">✦</span>
+    <a href="gallery.html" data-cursor>Галерея</a><span class="nav__sep">✦</span>
+    <a href="about.html" data-cursor>О клубе</a>
+  </nav>
+  <a href="contacts.html" class="nav__cta" data-cursor><span>Контакты</span></a>
+</header>
+
+<main>
+  <!-- Герой резиденции -->
+  <section class="res-hero">
+    <div class="res-hero__bg" data-field="hero" data-parallax-bg></div>
+    <div class="res-hero__scrim"></div>
+    <div class="res-hero__inner">
+      <div>
+        <div class="breadcrumb"><a href="residences.html" data-cursor>Резиденции</a><i>/</i><span data-field="name">Резиденция</span></div>
+        <p class="res-hero__type" data-field="type">Таунхаус</p>
+        <h1 class="res-hero__name" data-field="name">Ривьера</h1>
+      </div>
+      <div class="res-hero__price">
+        <b data-field="price">от 48 млн ₽</b>
+        <span>стоимость резиденции</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Характеристики -->
+  <section class="res-specs">
+    <div class="res-specs__grid">
+      <div class="spec"><b data-field="area">184</b><span>м² площадь</span></div>
+      <div class="spec"><b data-field="beds">3</b><span>спальни</span></div>
+      <div class="spec"><b data-field="baths">3</b><span>санузла</span></div>
+      <div class="spec"><b data-field="floor">2</b><span>этаж</span></div>
+      <div class="spec"><b data-field="terrace">46</b><span>м² терраса</span></div>
+    </div>
+  </section>
+
+  <!-- Описание + удобства -->
+  <section class="res-about">
+    <figure class="res-about__media"><img data-field="img" src="assets/img/interior1.jpg" alt="Интерьер резиденции"></figure>
+    <div class="res-about__body">
+      <p class="eyebrow" data-reveal-line>О резиденции</p>
+      <h2 class="section-title" data-reveal>Пространство, <em>обращённое к воде</em></h2>
+      <p class="res-about__desc" data-field="desc" data-reveal>Угловая резиденция первой линии с панорамным видом на реку.</p>
+      <ul class="amenities" data-stagger>
+        <li>Панорамное остекление в пол</li>
+        <li>Приватная терраса у воды</li>
+        <li>Камин и зона лаунж</li>
+        <li>Кухня премиум-комплектации</li>
+        <li>Гардеробная при мастер-спальне</li>
+        <li>Тёплые полы и климат-контроль</li>
+        <li>Подземный паркинг</li>
+        <li>Смарт-управление домом</li>
+      </ul>
+      <a href="contacts.html" class="btn btn--solid" data-cursor data-magnetic><span>Записаться на просмотр</span><i>→</i></a>
+    </div>
+  </section>
+
+  <!-- План этажа -->
+  <section class="floorplan">
+    <div class="section-head">
+      <p class="eyebrow" data-reveal-line>Планировка</p>
+      <h2 class="section-title" data-reveal>Продуманная <em>до метра</em></h2>
+    </div>
+    <div class="floorplan__wrap">
+      <div class="floorplan__svg" data-reveal>
+        <svg viewBox="0 0 520 420" xmlns="http://www.w3.org/2000/svg">
+          <!-- внешний контур -->
+          <rect x="20" y="20" width="480" height="380" class="fp-room" rx="3"/>
+          <rect x="20" y="20" width="480" height="380" class="fp-fill" rx="3"/>
+          <!-- гостиная -->
+          <rect x="20" y="20" width="290" height="230" class="fp-room"/>
+          <text x="60" y="135" class="fp-label">Гостиная</text>
+          <text x="60" y="152" class="fp-dim">7.4 × 6.0 м</text>
+          <!-- кухня-столовая -->
+          <rect x="310" y="20" width="190" height="150" class="fp-room"/>
+          <text x="345" y="92" class="fp-label">Кухня · столовая</text>
+          <text x="345" y="109" class="fp-dim">4.8 × 3.8 м</text>
+          <!-- санузел -->
+          <rect x="310" y="170" width="95" height="80" class="fp-room"/>
+          <text x="325" y="212" class="fp-label">С/у</text>
+          <!-- холл -->
+          <rect x="405" y="170" width="95" height="80" class="fp-room"/>
+          <text x="420" y="212" class="fp-label">Холл</text>
+          <!-- спальня 1 -->
+          <rect x="20" y="250" width="180" height="150" class="fp-room"/>
+          <text x="55" y="322" class="fp-label">Спальня 1</text>
+          <text x="55" y="339" class="fp-dim">4.6 × 3.8 м</text>
+          <!-- спальня 2 -->
+          <rect x="200" y="250" width="150" height="150" class="fp-room"/>
+          <text x="230" y="322" class="fp-label">Спальня 2</text>
+          <text x="230" y="339" class="fp-dim">3.8 × 3.8 м</text>
+          <!-- терраса -->
+          <rect x="350" y="250" width="150" height="150" class="fp-room" stroke-dasharray="5 5"/>
+          <text x="385" y="322" class="fp-label">Терраса</text>
+          <text x="385" y="339" class="fp-dim">у воды</text>
+        </svg>
+      </div>
+      <ul class="floorplan__legend" data-stagger>
+        <li><span>Гостиная с двойной высотой</span><b>44 м²</b></li>
+        <li><span>Кухня-столовая</span><b>18 м²</b></li>
+        <li><span>Мастер-спальня с гардеробной</span><b>17 м²</b></li>
+        <li><span>Вторая спальня</span><b>14 м²</b></li>
+        <li><span>Приватная терраса</span><b data-field="terrace">46</b></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Галерея резиденции (лайтбокс) -->
+  <section class="res-gallery">
+    <div class="section-head">
+      <p class="eyebrow" style="color:var(--gold-soft)" data-reveal-line>Интерьеры</p>
+      <h2 class="section-title" data-reveal>Загляните <em>внутрь</em></h2>
+    </div>
+    <div class="thumbs" data-stagger>
+      <figure data-lightbox data-src="assets/img/interior1.jpg" data-caption="Гостиная" data-cursor data-cursor-label="смотреть"><img src="assets/img/interior1.jpg" alt=""></figure>
+      <figure data-lightbox data-src="assets/img/kitchen.jpg" data-caption="Кухня-столовая" data-cursor data-cursor-label="смотреть"><img src="assets/img/kitchen.jpg" alt=""></figure>
+      <figure data-lightbox data-src="assets/img/bedroom1.jpg" data-caption="Спальня" data-cursor data-cursor-label="смотреть"><img src="assets/img/bedroom1.jpg" alt=""></figure>
+      <figure data-lightbox data-src="assets/img/lobby.jpg" data-caption="Ванная комната" data-cursor data-cursor-label="смотреть"><img src="assets/img/lobby.jpg" alt=""></figure>
+      <figure data-lightbox data-src="assets/img/terrace.jpg" data-caption="Панорамная зона" data-cursor data-cursor-label="смотреть"><img src="assets/img/terrace.jpg" alt=""></figure>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta__bg" style="background-image:url('assets/img/lake.jpg')" data-parallax-bg></div>
+    <div class="cta__scrim"></div>
+    <div class="cta__inner">
+      <h2 class="cta__title" data-reveal>Приватный показ <em>резиденции</em></h2>
+      <p class="cta__sub" data-reveal>Оставьте заявку — менеджер клуба свяжется с вами и согласует удобное время визита.</p>
+      <a href="contacts.html" class="btn btn--gold" data-cursor data-magnetic data-reveal><span>Записаться</span><i>→</i></a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="site-footer__top">
+      <div>
+        <div class="site-footer__brand"><i>✦</i>ЗАРЕЧЬЕ</div>
+        <p>Резиденц-клуб из шестнадцати таунхаусов премиум-класса на берегу реки. Концепт-превью 2026.</p>
+      </div>
+      <div class="fcol">
+        <h4>Навигация</h4>
+        <a href="residences.html" data-cursor>Резиденции</a>
+        <a href="gallery.html" data-cursor>Галерея</a>
+        <a href="about.html" data-cursor>О клубе</a>
+        <a href="contacts.html" data-cursor>Контакты</a>
+      </div>
+      <div class="fcol">
+        <h4>Контакты</h4>
+        <a href="tel:+74950000000" data-cursor>+7 495 000-00-00</a>
+        <a href="mailto:hello@zarechye.club" data-cursor>hello@zarechye.club</a>
+        <a>Набережная реки, 1</a>
+        <a>Центральный район</a>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© <span data-year>2026</span> ЗАРЕЧЬЕ · Концепт-превью</span>
+      <span>Демонстрационный проект</span>
+    </div>
+  </footer>
+</main>
+
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/lenis.min.js"></script>
+<script src="assets/vendor/split-type.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
